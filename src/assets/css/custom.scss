@@ -1,0 +1,117 @@
+// src/sass/variables.scss
+@import '~vuetify/src/styles/settings/_variables';
+
+/* DEFAULT FONT
+============================================= */
+$font-family: 'Titillium Web', sans-serif !important;
+$font-naughty: 'Naughty Monster', sans-serif !important;
+
+* , .v-application {font-family: $font-family;}
+
+.v-application {
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .headline,
+  .title,
+  .subtitle-1,
+  .subtitle-2,
+  .body-1,
+  .body-2,
+  .caption,
+  .overline {
+    font-family: $font-family;
+  }
+}
+
+/* COLOR VARIABLES
+============================================= */
+$green: #3fa9b3;
+$blue: #1a4e81;
+$blue-primary: #2196f3;
+$yellow: #fbe594;
+$light-blue: #b2dbf6;
+/* GRADIENT LISTS
+============================================= */
+.gradiente-header {
+  background-image: linear-gradient(90deg, $green 0%, $blue 70%);
+}
+
+.font-Naughty{
+  font-family: $font-naughty;
+}
+
+.carousel-item .text-h2{
+  font-family: $font-naughty;
+}
+
+.theme--light.v-sheet--outlined{
+  border: none;
+}
+
+/* CUSTOM CSS
+============================================= */
+.v-carousel{
+  background-color: $blue-primary;
+}
+.text-white{color: white;}
+
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-p{
+  font-family: $font-family;
+  width: 100%;
+}
+
+.v-application .text-h2{
+  font-family: $font-naughty;
+  white-space: pre-line;
+  letter-spacing: normal !important;
+  line-height: normal;
+  font-size: 6rem !important;
+}
+
+.v-application .text-h3{
+  font-family: $font-family;
+  color: $yellow;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.v-application .text-p{
+  font-family: $font-family;
+  font-size: 1.2rem !important;
+  font-weight: normal;
+}
+
+.v-responsive__content{
+  float: left;
+  margin: 0 50%;
+  position: absolute;
+  width: 100%;
+  display: block;
+  padding-top:5rem
+}
+
+.theme--light.v-text-field--filled > .v-input__control > .v-input__slot,
+.theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover,
+.v-input--hide-details > .v-input__control > .v-input__slot.text-h2{
+  background-color: $light-blue;
+  border: 1px solid $light-blue;
+}
+.result-select{
+  background-color: $light-blue;
+  border: 1px solid $blue;
+}
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  .v-responsive__content{
+    float: left;
+    margin: 0;
+    padding: 5%;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+}
